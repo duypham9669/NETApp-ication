@@ -20,5 +20,7 @@ namespace WebApplication.Data
         }
 
         public System.Data.Entity.DbSet<WebApplication.Models.product> products { get; set; }
+
+        public System.Data.Entity.DbSet<WebApplication.Models.user> users { get; set; }
     }
 }
