@@ -117,6 +117,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\productsController.cs" />
+    <Compile Include="Controllers\usersController.cs" />
     <Compile Include="Data\WebApplicationContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -125,8 +126,13 @@
     <Compile Include="Migrations\202004081341114_InitaDatabase.Designer.cs">
       <DependentUpon>202004081341114_InitaDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004081359095_Adduser.cs" />
+    <Compile Include="Migrations\202004081359095_Adduser.Designer.cs">
+      <DependentUpon>202004081359095_Adduser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\product.cs" />
+    <Compile Include="Models\user.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +184,11 @@
     <Content Include="Views\products\Details.cshtml" />
     <Content Include="Views\products\Edit.cshtml" />
     <Content Include="Views\products\Index.cshtml" />
+    <Content Include="Views\users\Create.cshtml" />
+    <Content Include="Views\users\Delete.cshtml" />
+    <Content Include="Views\users\Details.cshtml" />
+    <Content Include="Views\users\Edit.cshtml" />
+    <Content Include="Views\users\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -190,6 +201,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202004081341114_InitaDatabase.resx">
       <DependentUpon>202004081341114_InitaDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004081359095_Adduser.resx">
+      <DependentUpon>202004081359095_Adduser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
